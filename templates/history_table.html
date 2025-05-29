@@ -1,0 +1,9 @@
+{% for entry in history %}
+<tr>
+    <td>{{ entry.relative_day }}</td>
+    <td>{{ entry.date }}</td>
+    <td>{{ entry.day }}</td>
+    <td>{{ entry.rate }}</td>
+    <td>{{ entry.calculated_value }}</td>
+</tr>
+{% endfor %}
