@@ -13,7 +13,7 @@ class FlaskAppTest(unittest.TestCase):
         """Test czy strona główna zawiera oczekiwany tekst."""
         response = self.app.get('/')
         data = response.data.decode('utf-8')
-        self.assertIn('Przelicznik walut z historią BLAD kursów', data)
+        self.assertIn('Przelicznik walut z historią kursów', data)
 
     def test_page_loads(self):
         response = self.app.get('/')
